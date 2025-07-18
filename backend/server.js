@@ -20,7 +20,8 @@ connectDB();
 // Security Middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'https://university-backlog-tracker-1.onrender.com',
+  // origin: process.env.FRONTEND_URL || 'https://university-backlog-tracker-1.onrender.com',
+  origin: 'https://university-backlog-tracker-1.onrender.com',
   credentials: true
 }));
 
