@@ -4,7 +4,7 @@ const API_URL = process.env.REACT_APP_API_URL;
 
 const AuthContext = createContext();
 
-axios.defaults.baseURL = API_URL;
+axios.defaults.baseURL = API_URL || 'https://university-backlog-tracker.onrender.com';
 
 const initialState = {
   token: localStorage.getItem('token'),
